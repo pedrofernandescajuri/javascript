@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 002</title>
+    <style>
+        input {
+            text-align: center;
+            width: 190px;
+            height: 70px;
+            background-color: rgba(211, 211, 211, 0.519);
+            border: 1px solid rgba(0, 0, 0, 0.289); 
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boas vindas</h1>
+    <input type="button" value="Inicie o Desafio" id="unico" >
+    <script>
+        var inicio = window.document.getElementById('unico')
+        inicio.addEventListener('click', clicou)
+        function clicou() {
+            name = window.prompt('Olá, qual o seu nome?')
+            idade = window.prompt(`Olá ${name}, quantos anos você tem?`)
+            fim = window.alert(`Acabei de conhecer ${name}, que tem ${idade} anos de idade!`)
+        }
+        
+    </script>
+</body>
+</html>

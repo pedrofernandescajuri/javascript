@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio001</title>
+    <style>
+        input {
+            text-align: center;
+            line-height: 100px;
+            width: 190px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid black; 
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Desafio das Mensagens</strong></h1>
+    <input type="button" value="Botão 1" id="b1" onclick="on">
+    <input type="button" value="Botão 2" id="b2" onclick="on">
+    <input type="button" value="Botão 3" id="b3" onclick="on">
+    <script>
+        var primeiro = window.document.getElementById('b1')
+        var segundo = window.document.getElementById('b2')
+        var terceiro = window.document.getElementById('b3')
+        primeiro.addEventListener('click', clicou)
+        segundo.addEventListener('click' , clicar)
+        terceiro.addEventListener('click', clik)
+        function clicou() {
+            primeiro = window.alert('Esta página diz você clicou no botão 1')
+        }
+        function clicar() {
+            segundo = window.alert('Esta página diz Você clicou no botão 2 ')
+        }
+        function clik() {
+            terceiro = window.alert('Esta página diz, Você clicou no Botão 3')
+        }
+
+    </script>
+</body>
+</html>
