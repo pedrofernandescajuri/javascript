@@ -5,68 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarío do dia</title>
-    <style>
-        body {
-            background-color: rgb(204, 190, 71);
-            display: block;
-            position: relative;
-        }
-        header {
-            text-align: center;
-            color: white;
-        }
-        main {
-            background-color: white;
-            height: 60vh;
-            width: 40%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 8%);
-            border-radius: 30px;
-        }
-        main > div {
-            font-size: 1.5em;
-            text-align: center;
-        }
-        img {
-            width: 230px;
-            height: 221px;
-            border-radius: 200px;
-            display: none;
-        }
-        footer {
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 1800%);
-            font-size: 1.5em;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Hora do dia</h1>
     </header>
-    <main>
-        <div id="tempo">
-            Agora são
-            <script>
-                var agora = new Date()
-                var hora = agora.getHours()
-                var tempo = document.getElementById('tempo')
-                tempo += (`${hora}`)
-            </script>
+    <section>
+        <div id="msg">
+            Mensagem
         </div>
-        <img src="Imagens/Manhã.jpg" alt="" id="1">
-        <img src="Imagens/Tarde.jpg" alt="" id="2">
-        <img src="Imagens/Noite.jpg" alt="" id="3">
-    </main>
+        <div id="foto">
+            <img src="Imagens/Manhã.jpg" alt="" id="imagem">
+        </div>
+    </section>
     <footer>
-        &reg; Curso em vídeo
+        &copy; Curso em vídeo
     </footer>
-   
+    <script src="script.js"></script>
 </body>
 </html>
