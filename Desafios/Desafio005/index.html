@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Identidade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de identidade</h1>
+    </header>
+    <main>
+        <form action="script.js">
+            <p>
+                <label for="inas">Qual o seu ano de nascimento</label>
+                <input type="number" name="nas" id="inas" value="2000">
+            </p>
+            <p>
+                <label for="isex">Sexo: </label>
+                Masculino: <input type="checkbox" name="sex" id="imas">
+                Feminino: <input type="checkbox" name="sex" id="ifem">
+            </p>
+            <input type="button" value="Verificar" onclick="verifique()">
+        </form>
+        <p>
+            Preencha os dados acima para ver o resultado!
+        </p>
+        <div id="res"></div>
+    </main>
+    <footer>
+        <img src="" alt="">
+    </footer>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
