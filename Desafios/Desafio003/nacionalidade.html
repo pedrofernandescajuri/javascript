@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrindo a sua Nacionalidade</h1>
+    <p>
+        <label for="iper">Em qual país você nasceu?</label>
+        <input type="text" name="naci" id="inaci">
+        <input type="button" value="Verificar"  onclick="clicou()">
+    </p>
+    <div id="ires">
+    </div>
+    <script>
+        var naci = window.document.getElementById('inaci')
+        var res = window.document.getElementById('ires')
+        var resposta = Text(naci.value)
+        res.innerHTML = `Nascendo em ${resposta}`
+        function clicou() {
+            if (resposta == 'Brasil') {
+                res.innerHTML += 'Você e brasileiro'
+            }
+            else {
+                res.innerHTML += 'Você e estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
