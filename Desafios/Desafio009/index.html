@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(25, 155, 198);
+            font: normal 15pt arial;
+        }
+        header, main {
+            color: White;
+            text-align: center;
+        }
+        main {
+            margin-left: 25%;
+            background-color: white;
+            width: 50%;
+            color: black;
+            height: 60vh;
+            border-radius: 20px;
+        }
+        p {
+            padding: 20px;
+            color: rgb(2, 2, 67);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <p>
+            <label for="in1">Inicio:</label>
+            <input type="number" name="n1" id="in1">
+        </p>
+        <p>
+            <label for="in2">Fim:</label>
+            <input type="number" name="n2" id="in2">
+        </p>
+        <p>
+            <label for="in3">Passo</label>
+            <input type="number" name="n3" id="in3">
+        </p>
+        <input type="button" value="Enviar" onclick="clicou()">
+        <div id="ires"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
