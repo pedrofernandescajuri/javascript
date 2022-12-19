@@ -1,0 +1,27 @@
+@charset "Utf-80";
+
+body {
+    background-color: rgb(25, 155, 198);
+    font: normal 15pt arial;
+}
+header {
+    text-align: center;
+}
+header, section {
+    color: White;
+
+}
+section {
+    margin-left: 20%;
+    background-color: white;
+    width: 60vw;
+    color: black;
+    border-radius: 20px;
+    padding: 15px;
+}
+select {
+    width: 150px;
+}
+footer {
+    text-align: center;
+}
